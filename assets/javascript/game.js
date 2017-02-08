@@ -7,10 +7,9 @@ var crystalCollector = {
 	crystal2: 0,
 	crystal3: 0,
 	crystal4: 0,
-	crystalCount: 4,
 	score: 0,
 
-	//function to generate random number between 19-120 and add to inner HTML
+	//generate random number between 19-120 and add to inner HTML
 	generateRandNum: function() {
 		this.randNum = Math.floor(Math.random()*102 + 19);
 		$("#target").html(this.randNum);
@@ -28,7 +27,7 @@ var crystalCollector = {
 		console.log(this.crystal4);		
 	},
 
-	// increase the score each time a crystal is clicked
+	// increase the score for each crystal clicked and then determine whether the score is a winner or loser
 	increaseScore: function() {
 	 	this.score += this.crystal1;
 	 		if(this.score == this.randNum) {
@@ -113,9 +112,7 @@ $(document).ready(function(){
 
 	crystalCollector.generateCrystalValues();
 
-//	crystalCollector.checkScore();
-
-
+	// click functions to increase the score appropriately based on the crystal clicked
 	 $("#crystal-1").on("click", function(){
 	 	crystalCollector.increaseScore();
 		$("#score").html("Score: " + crystalCollector.score);
