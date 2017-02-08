@@ -1,11 +1,51 @@
+body {
+	background: url("../images/psychedelic_pattern_@2X.png");
+}
+
 h1 {
 	background: red;
+	text-align: center;
+	height: 100px;
+	width: 300px;
+	margin: 0 auto;
 }
 
 p {
 	background: green;
+	width: 500px;
+	margin: 0 auto;
 }
 
-#green {
+#numbers {
+	background: yellow;
+	width: 200px;
+	margin: 0 auto;
+}
+
+#crystal-row {
+	margin: 0 auto;
+	background: pink;
+	width: 500px;
+}
+
+#crystal-1 {
 	float: left;
+}
+
+#crystal-2 {
+	float: left;
+}
+
+#crystal-3 {
+	float: left;
+}
+
+#crystal-4 {
+
+}
+
+#tally {
+	background: orange;
+	margin: 0 auto;
+	width: 200px;
 }

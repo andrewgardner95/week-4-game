@@ -12,7 +12,7 @@ var crystalCollector = {
 	//generate random number between 19-120 and add to inner HTML
 	generateRandNum: function() {
 		this.randNum = Math.floor(Math.random()*102 + 19);
-		$("#target").html(this.randNum);
+		$("#target").html("Random Number: " + this.randNum);
 	},
 
 	//function to generate random values for each crystal
@@ -115,22 +115,22 @@ $(document).ready(function(){
 	// click functions to increase the score appropriately based on the crystal clicked
 	 $("#crystal-1").on("click", function(){
 	 	crystalCollector.increaseScore();
-		$("#score").html("Score: " + crystalCollector.score);
+		$("#score").html("Your Score: " + crystalCollector.score);
 	 });
 
 	 $("#crystal-2").on("click", function(){
 	 	crystalCollector.increaseScore2();
-		$("#score").html("Score: " + crystalCollector.score);
+		$("#score").html("Your Score: " + crystalCollector.score);
 	 });
 
 	 $("#crystal-3").on("click", function(){
 	 	crystalCollector.increaseScore3();
-		$("#score").html("Score: " + crystalCollector.score);
+		$("#score").html("Your Score: " + crystalCollector.score);
 	 });
 
 	 $("#crystal-4").on("click", function(){
 	 	crystalCollector.increaseScore4();
-		$("#score").html("Score: " + crystalCollector.score);
+		$("#score").html("Your Score: " + crystalCollector.score);
 	 });
 
 });
