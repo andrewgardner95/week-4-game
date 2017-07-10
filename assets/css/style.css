@@ -6,8 +6,8 @@ body {
 
 h1 {
 	text-align: center;
-	height: 100px;
-	width: 300px;
+	height: 50px;
+	width: 90%;
 	margin: 0 auto;
 	font-size: 48px;
 	margin-top: 50px;
@@ -15,7 +15,7 @@ h1 {
 
 ul {
 	border: solid 1px #885aff;
-	width: 500px;
+	width: 80%;
 	margin: 0 auto;
 	font-family: Arial, Helvetica, sans-serif;
 	margin-top: 20px;
@@ -27,7 +27,7 @@ ul {
 #entire {
 	background: white;
 	height: 100%;
-	width: 700px;
+	width: 50%;
 	margin: 0 auto;
 	border: dashed 3px #885aff;
 	margin-top: 50px;
@@ -41,7 +41,7 @@ ul {
 }
 
 #numbers {
-	width: 300px;
+	width: 50%;
 	margin: 0 auto;
 	text-align: center;
 	margin-bottom: 10px;
